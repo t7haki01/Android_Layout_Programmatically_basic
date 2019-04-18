@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
 
     ListView listView ;
     EditText editText ;
-    final int listViewId = 1234;
 
     String[] COUNTRIES = new String[]{
             "Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra",
@@ -97,8 +96,6 @@ public class MainActivity extends AppCompatActivity {
         ViewGroup.LayoutParams listParams = new LinearLayout.LayoutParams(FILL_PARENT, WRAP_CONTENT);
         listView = new ListView(this);
         listView.setLayoutParams(listParams);
-
-        listView.setId(listViewId);
 
         final ArrayAdapter<String> aa;
 
